@@ -1,0 +1,137 @@
+/* Universal Operator */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("images/background.jpg");
+  font-family: Poppins, sans-serif;
+}
+
+/* Background Setup */
+.picture img {
+  height: 30%;
+  width: 30%;
+  margin-top: 13rem;
+}
+
+/* Card Styling */
+.main_box {
+  background-color: rgb(231, 0, 0);
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  transform: translateX(-50%) translateY(-50%);
+  padding: 40px 1px;
+  width: 50%;
+  border-radius: 20px;
+}
+
+/* Headings Styling Starts */
+h1 {
+  color: #fff;
+  font-size: 2.6rem;
+  display: inline-block;
+  position: relative;
+  margin-left: 10rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Typing Effect */
+h1::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background-color: rgb(231, 0, 0);
+  border-left: 3px solid #fff;
+  animation: cursor 0.5s linear infinite, typing 3s steps(15) forwards 1;
+}
+
+/* Using Keyframes */
+@keyframes cursor {
+  0% {
+    border-color: #fff;
+  }
+  50% {
+    border-color: #fff;
+  }
+  65% {
+    border-color: transparent;
+  }
+  75% {
+    border-color: transparent;
+  }
+  90% {
+    border-color: #fff;
+  }
+  100% {
+    border-color: #fff;
+  }
+}
+
+@keyframes typing {
+  to {
+    width: 0;
+  }
+}
+
+#sub_head {
+  color: #fff;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+/* Headings Styling Ends */
+
+/* Input Sections */
+input {
+  display: block;
+  line-height: 2.5rem;
+  width: 50%;
+  margin: 0 auto;
+  border: none;
+  padding: 10px;
+  font-size: 1.3rem;
+  border-radius: 10px;
+}
+
+input:focus {
+  outline: none;
+}
+
+/* Button Styling */
+button {
+  background-color: #fff;
+  color: #000;
+  font-family: Poppins, sans-serif;
+  font-size: 1.2em;
+  height: 3rem;
+  padding: 10px;
+  margin: 10px 15px;
+  border: none;
+  border-radius: 7px;
+}
+button:hover {
+  box-shadow: none;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+}
+
+#buttons {
+  text-align: center;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1150px) {
+    img{
+        display: none;
+    }
+}
