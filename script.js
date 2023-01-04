@@ -4,7 +4,7 @@ function generate() {
     console.log("The number is: " + required_number);
     h3 = document.querySelector("#sub_head");
     // InnerHTML for allowing reading and replacing everything within a given DOM element.
-    h3.innerHTML = "Try to guess the whole number between 0 and 10.";
+    h3.innerHTML = "Try to guess the number between 0 and 10.";
   }
 
   // For Checking the validity
