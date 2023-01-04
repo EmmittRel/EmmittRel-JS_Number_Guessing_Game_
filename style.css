@@ -129,6 +129,22 @@ button:hover {
   text-align: center;
 }
 
+/* Footer */
+.footer{
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.link{
+    color: #000;
+}
+
+.link:hover{
+    color: red;
+}
+
 /* Media Queries */
 @media screen and (max-width: 1150px) {
     img{
